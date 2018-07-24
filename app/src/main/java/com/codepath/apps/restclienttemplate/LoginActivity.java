@@ -45,7 +45,7 @@ public class LoginActivity extends OAuthLoginActionBarActivity<TwitterClient> {
 	// i.e Display application "homepage"
 	@Override
 	public void onLoginSuccess() {
-		//Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show();
+		Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show();
 		Intent i = new Intent(this, TimelineActivity.class);
 		startActivity(i);
 	}
@@ -56,7 +56,9 @@ public class LoginActivity extends OAuthLoginActionBarActivity<TwitterClient> {
 	public void onLoginFailure(Exception e) {
 
 		e.printStackTrace();
-		Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
+		Toast.makeText(this, "Error login, check your internet connection", Toast.LENGTH_SHORT).show();
+		Intent intent = new Intent(this,LoginFailure.class);
+		startActivity(intent);
 	}
 
 	// Click handler method for the button used to start OAuth flow

@@ -13,6 +13,7 @@ public class Tweet {
     public String body;
     public Long uid; //database for id tweets
     public  User user;
+    public String screenName;
     public String createdAt;
 
 
@@ -22,6 +23,7 @@ public class Tweet {
         // extract the valuse from json
         tweet.body = jsonObject.getString("text");
         tweet.uid = jsonObject.getLong("id");
+
         tweet.createdAt = jsonObject.getString("created_at");
         tweet.user = User.fromJSON(jsonObject.getJSONObject("user"));
         return tweet;

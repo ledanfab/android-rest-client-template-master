@@ -72,7 +72,8 @@ public class TimelineActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
-                Log.d("TwitterClient",errorResponse.toString());
+                switch (Log.d("TwitterClient", errorResponse.toString())) {
+                }
                 throwable.printStackTrace();
             }
 
