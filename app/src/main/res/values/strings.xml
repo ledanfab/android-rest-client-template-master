@@ -7,7 +7,8 @@
     <string name="intent_host">cprest</string>
     <string name="twitter_by_fabrice">twitter by Fabrice</string>
     <string name="twitterlogo">twitterlogo</string>
-    <string name="noconnection">You Have a connection problem pleas try again</string>
+    <string name="noconnection">You have a connection problem pleas try again</string>
     <string name="retry">RETRY</string>
+    <string name="numtwtt">00</string>
 
 </resources>

@@ -55,7 +55,7 @@ public class LoginActivity extends OAuthLoginActionBarActivity<TwitterClient> {
 	@Override
 	public void onLoginFailure(Exception e) {
 
-		e.printStackTrace();
+		//e.printStackTrace();
 		Toast.makeText(this, "Error login, check your internet connection", Toast.LENGTH_SHORT).show();
 		Intent intent = new Intent(this,LoginFailure.class);
 		startActivity(intent);
