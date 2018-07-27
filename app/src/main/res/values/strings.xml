@@ -10,5 +10,6 @@
     <string name="noconnection">You have a connection problem pleas try again</string>
     <string name="retry">RETRY</string>
     <string name="numtwtt">00</string>
+    <string name="fab_twitter">*@fab_twitter</string>
 
 </resources>
